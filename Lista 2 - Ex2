@@ -1,0 +1,30 @@
+/*
+Lista 2
+Exercício 2
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    double real;
+    int dolar;
+
+    printf ("Quantos doláres você precisa comprar? "); //Pede para o usuário digitar 
+    scanf("%d",&dolar);//Lê e armazena a informação
+
+    real = dolar*5.60;
+
+    printf("Para comprar %d doláres, você precisará de %f reais",dolar, real);
+
+    return 0;
+
+}
+
+/*Observações: 
+- Como são números decimais, usar float ou double para os reais.
+- Os numeros decimais são separados por ponto, e não por virgula
+- Como usei int para a variável dolar, o número de doláres a ser comprado não pode ser fracionada
+*/
