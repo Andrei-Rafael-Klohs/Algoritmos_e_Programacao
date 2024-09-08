@@ -1,0 +1,26 @@
+/*
+Lista 2
+Exercício 9
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    double compras, valor_descontado;
+
+    //Inserir os dados
+    printf("Qual foi o valor da compra? ");
+    scanf("%lf",&compras);
+
+    //Processamento dos dados
+    valor_descontado=compras*0.85;
+
+    //Mostra o resultado
+    printf("O valor da compra com desconto fica %lf reais",valor_descontado);
+
+
+    return 0;
+}
