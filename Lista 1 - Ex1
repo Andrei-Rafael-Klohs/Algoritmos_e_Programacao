@@ -1,0 +1,29 @@
+Para o C:
+
+#include<stdio.h>
+
+int main()
+{
+    printf("Olá Mundo!");
+    
+    
+    return 0;
+}
+
+//O comando de saída de dados é o printf
+
+
+Para o R:
+
+print("Olá Mundo!")
+
+#O comando de saída de dados é o print
+
+
+Para o Python:
+
+print("Olá Mundo!")
+
+#O comando de saída de dados é o print, assim como no R
+
+
