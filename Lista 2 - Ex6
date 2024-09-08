@@ -1,0 +1,34 @@
+/*
+Lista 2
+Exercício 6
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    int smartphones,tablet,valor_tablet,valor_smartphone,faturamento;
+
+    //Coleta os dados
+    printf("Quantos smartphones foram vendidos no dia? ");
+    scanf("%d",&smartphones);
+
+    printf("Quantos tablets foram vendidos no dia? ");
+    scanf("%d",&tablet);
+
+    //Processa os dados
+    valor_smartphone = smartphones*1000;
+
+    valor_tablet = tablet*1500;
+
+    faturamento = valor_tablet + valor_smartphone;
+
+    //Mostra os resultados
+    printf("Foram vendidos %d tablets, resultando em %d reais\n", tablet, valor_tablet);
+    printf("Foram vendidos %d smartphones, resultando em %d reais\n", smartphones, valor_smartphone);
+    printf("O faturamento total no dia foi de %d reais",faturamento);
+
+    return 0;
+}
