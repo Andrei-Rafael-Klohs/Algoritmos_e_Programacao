@@ -1,0 +1,25 @@
+/*
+Lista 2
+Exercício 4
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    int grau_a, grau_b, grau_final;
+
+    printf("Qual foi a sua nota no Grau A? ");
+    scanf("%d",&grau_a);
+
+    printf("Qual foi a sua nota no Grau B? ");
+    scanf("%d",&grau_b);
+
+    grau_final = (grau_a + grau_b*2)/3;
+
+    printf("Você obteve uma média de %d",grau_final);
+
+    return 0;
+}
