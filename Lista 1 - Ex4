@@ -1,0 +1,32 @@
+/*
+Lista 1
+Exercício 4
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+
+Observações: Basta colocar a pergunta objetiva e as alternativas, e substituir qual a alternativa correta dada para a variável "resposta_correta"
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    char resposta_correta= 'a'; //Isso aqui armazena a resposta correta em uma variável
+    char resposta_usuario[2]; //Armazena a resposta do usuário
+    printf("Pergunta objetiva\n");
+    printf("a) Alternativa 1\n");
+    printf("b) Alternativa 2\n");
+    printf("c) Alternativa 3\n");
+    printf("d) Alternativa 4\n");
+    printf("e) Alternativa 5\n");
+
+    printf("Digite sua resposta ");
+    
+    scanf("%s",resposta_usuario); 
+
+    printf("Você respondeu alternativa %s. A resposta correta é a alternativa %c", resposta_usuario, resposta_correta);
+    
+    return 0;
+}
+
+    //Observação: No último printf, para colocar a variavel da resposta correta, foi necessário usar o string "%c", por ser um char de um único caractere
