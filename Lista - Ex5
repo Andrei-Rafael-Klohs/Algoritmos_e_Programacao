@@ -1,0 +1,25 @@
+/*
+Lista 2
+Exercício 5
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    double gasolina, dinheiro_disponivel,litros;
+
+    printf("Qual o preço da gasolina por litro? ");
+    scanf("%lf",&gasolina);
+
+    printf("Qual o valor disponível para abastecer? ");
+    scanf("%lf",&dinheiro_disponivel);
+
+    litros = dinheiro_disponivel/gasolina;
+
+    printf("É possível abastecer até %lf litros de gasolina", litros);
+
+    return 0;
+}
