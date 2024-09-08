@@ -1,0 +1,39 @@
+/*
+Lista 3
+Exercício 1
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    int numero1, numero2, resultado;
+    
+    //Digite os dados
+    printf("Digite um número: ");
+    scanf("%d",&numero1);
+
+    printf("Digite outro número: ");
+    scanf("%d",&numero2);
+
+    //Opção caso o numero seja diferente de zero
+    if(numero2!=0)
+    {
+        resultado=numero1/numero2;
+
+        printf("O resultado da divisão dos dois números é %d",resultado);
+
+    }
+
+    //Opção caso o número seja igual a zero
+    else 
+    {
+        printf("Não é possível efetuar uma divisão por zero");
+
+    }
+
+
+    return 0;
+}
