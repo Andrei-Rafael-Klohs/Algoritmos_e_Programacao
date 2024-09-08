@@ -1,0 +1,23 @@
+/*
+Lista 2
+Exercício 3
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+
+{
+    double peso, valor_a_pagar;
+    
+    printf("Qual foi o peso do prato em quilos? ");//Solicita o peso
+    scanf("%lf",&peso); //Escaneia o dado
+
+    valor_a_pagar = peso*40; //Calcula
+
+    printf("O valor a pagar é de %f reais", valor_a_pagar); //Mostra na tela
+
+    return 0;
+}
