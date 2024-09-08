@@ -1,0 +1,28 @@
+/*
+Lista 1
+Exercício 3
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    char resposta_correta= 'a'; //Isso aqui armazena a resposta correta em uma variável
+    char resposta_usuario[2]; //Armazena a resposta do usuário
+    printf("Qual é o verdadeiro nome do super herói Batman?\n"); //Utilize o "\n" para fazer as quebras de linha
+    printf("a) Bruce Wayne\n");
+    printf("b) Clark Kent\n");
+    printf("c) Peter Parker\n");
+    printf("d) Tony Stark\n");
+    printf("e) Steve Rogers\n");
+
+    printf("Digite sua resposta "); //Sempre que fizer um printf, deixe um espaço em branco antes das aspa
+    
+    scanf("%s",resposta_usuario); //scanf é o comando para armazenar a resposta, precisa do string e a váriavel que ele vai armazenar
+
+
+    printf("Você respondeu alternativa %s. A resposta correta é a alternativa a ",resposta_usuario); //Retorna resposta
+    return 0;
+}
