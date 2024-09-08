@@ -13,7 +13,7 @@ int main ()
     printf("Digite seu nome: "); //Pede o nome da pessoa
     scanf("%s",nome); //É o comando para leitura do nome digitado
 
-    printf("Bem vindo, %s!!!",nome);
+    printf("Bem vindo, %s!",nome);
 
     return 0;
 }
