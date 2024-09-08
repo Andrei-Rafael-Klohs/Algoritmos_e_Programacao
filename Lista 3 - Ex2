@@ -1,0 +1,37 @@
+/*
+Lista 3
+Exercício 2
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    int A,B,C;
+
+    //Digita os valores a serem lidos pelo computador
+    printf("Digite um valor ");
+    scanf("%d",&A);
+
+    printf("Digite outro valor: ");
+    scanf("%d",&B);
+
+    printf("Digite mais um valor ");
+    scanf("%d",&C);
+
+    //Dá as condições
+    if(A+B>B+C)
+    {
+        printf("A soma de A+B é maior que a soma de B+C");
+
+    }   
+    else
+    {
+        printf("A soma de A+B não é maior que a soma de B+C)");
+    }
+         
+
+  return 0;
+}
