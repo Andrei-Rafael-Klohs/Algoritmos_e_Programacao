@@ -1,0 +1,33 @@
+/*
+Lista 3
+Exercício 4
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main ()
+{
+    int numero, resultado;
+
+    //Pede um número qualquer e armazena o dado
+    printf("Digite um número qualquer: ");
+    scanf("%d",&numero);
+
+    //Processamento
+    if(numero % 3 == 0) //Aqui é preciso utilizar o operador módulo para funcionar
+    {
+        resultado = numero/3;
+        printf ("Seu número é divisível por três, e o resultado da divisão é %d", resultado);
+    }
+
+    else
+    {
+        printf("Seu número não é divisível por três");
+
+    }
+    
+
+    return 0;
+}
