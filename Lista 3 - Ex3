@@ -1,0 +1,35 @@
+/*
+Lista 3
+Exercício 3 
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    int numero,dobro,triplo;
+
+    //Insere os dados
+    printf("Digite um número qualquer: ");
+    scanf("%d",&numero); 
+
+    //Processamento usando If e Else
+    if(numero>0)
+    {
+        dobro=numero*2;
+        printf("o número é positivo, e o seu dobro é %d",dobro);
+
+    }
+
+    else
+    {
+        triplo=numero*3;
+        printf("o número é negativo, e o seu triplo é %d",triplo);
+
+    }
+
+
+    return 0;
+}
