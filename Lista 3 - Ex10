@@ -1,0 +1,65 @@
+/*
+Lista 3
+Exercício 10
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h> 
+
+int main()
+{
+    //Aleatoriza com base no horário
+    srand(time(0)); 
+    
+    int escolhaMenu,sorteio;
+    
+    //Exibe o menu e pede para o usuario escolher
+    printf("Escolha o dado: \n");
+    printf("1 -D4\n");
+    printf("2 -D6\n");
+    printf("3 -D8\n");
+    printf("4 -D10\n");
+    printf("5 -D12\n");
+    printf("6 -D16\n");
+    scanf("%d",&escolhaMenu);
+   
+   //Faz o processamento conforme escolha do usuário
+    if (escolhaMenu == 1)
+    {
+        sorteio = 1 + rand() % 4;
+    }
+    else if (escolhaMenu == 2)
+    {
+        sorteio = 1 + rand() % 6;
+    }
+    else if (escolhaMenu == 3)
+    {
+        sorteio = 1 + rand() % 8;
+    }
+    else if (escolhaMenu == 4)
+    {
+        sorteio = 1 + rand() % 10;
+    }
+    else if (escolhaMenu == 5)
+    {
+        sorteio = 1 + rand() % 12;
+    } else if (escolhaMenu == 6)
+    {
+        sorteio = 1 + rand() % 16;
+    }
+    else
+    {
+        printf("Sua escolha é inválida, tente novamente\n");
+        sorteio = -1;
+    }
+
+    if (sorteio >= 0)
+    {
+        printf("O valor sorteado é %d",sorteio);
+    }
+
+    return 0;
+}
