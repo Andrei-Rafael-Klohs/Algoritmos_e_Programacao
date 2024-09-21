@@ -40,16 +40,16 @@ int main()
     //Verifica-se é par ou impar
         if ((escolhaUsuario == 'P') && numeroFinal % 2 == 0) 
         {
-    // O usuário escolheu PAR e a soma é par
-    printf("O destino quis e você venceu, parabéns!!\n");
+    //O usuário escolheu PAR e a soma é par
+    printf("O destino quis e você venceu, parabéns!!");
         } 
     else if ((escolhaUsuario == 'I') && numeroFinal % 2 != 0) {
-    // O usuário escolheu ÍMPAR e a soma é ímpar
-    printf("O destino quis e você venceu, parabéns!!\n");
+    //O usuário escolheu ÍMPAR e a soma é ímpar
+    printf("O destino quis e você venceu, parabéns!!");
     }
      else {
-    // O usuário perdeu
-    printf("Você perdeu, o computador (eu) venci!!!\n");
+    //O usuário perdeu
+    printf("Você perdeu, o computador (eu) venci!!!");
     }
     }
 
