@@ -1,0 +1,98 @@
+/*
+Lista 3
+Exercício 9
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    float cotacaoDolar,cotacaoEuro,valorConversao,valorRealParaEuro,valorRealParaDolar,valorEuroparaReal,valorDolarparaReal,valorEuroparaDolar,valorDolarParaEuro;
+    int escolhaMenu;
+
+    //Usuário informa as cotações
+    printf("Qual a cotação do dolár atualmente? ");
+    scanf("%f",&cotacaoDolar);
+
+    printf("Qual o valor do euro atualmente?");
+    scanf("%f",&cotacaoEuro);
+
+    //Apresentação do menu
+    printf("Escolha uma opção, por gentileza\n");
+    printf("1- Converter de Real para Euro\n");
+    printf("2- Converter de Real para Dólar\n");
+    printf("3- Converter de Euro para Dólar\n");
+    printf("4- Converter de Euro para Real\n");
+    printf("5- Converter de Dólar para Euro\n");
+    printf("6- Converter de Dólar para Real\n");
+    scanf("%d",&escolhaMenu);
+
+    //Verifica se o usuário forneceu uma resposta válida
+    if (escolhaMenu>6 || escolhaMenu<0)
+    {
+        printf("Digite um número válido, por gentileza");
+    }
+    else
+    {
+        printf("Digite o valor a ser convertido na moeda escolhida: ");
+        scanf("%f",&valorConversao);
+    }   
+
+    //Faz todos os cálculos
+    // de Real para Euro
+    valorRealParaEuro = valorConversao/cotacaoEuro;
+
+    //de Real para Dólar
+    valorRealParaDolar = valorConversao/cotacaoDolar;
+
+    //de Euro para Real
+    valorEuroparaReal = valorConversao*cotacaoEuro;
+
+    //de Dolar para Real = 
+    valorDolarparaReal = valorConversao*cotacaoDolar;
+
+    //de Euro para Dólar (primeiro converte de euro para real, e então para dolar)
+    valorEuroparaDolar = valorEuroparaReal/cotacaoDolar;
+
+    //De Dólar para Euro (primeiro converte de dolar para real, e depois para euro)
+    valorDolarParaEuro = valorDolarparaReal/cotacaoEuro;
+
+    //Retorna conforme a opção:
+        if(escolhaMenu==1)
+        {
+            printf("O valor convertido é %f euros",valorRealParaEuro);
+
+        }
+        else if(escolhaMenu==2)
+        {
+
+            printf("O valor convertido é %f dólares",valorRealParaDolar);
+
+        }
+        else if(escolhaMenu==3)
+        {
+            printf("O valor convertido é %f dólares",valorEuroparaDolar);
+
+        }
+        else if(escolhaMenu==4)
+        {
+            printf("O valor convertido é %f reais",valorEuroparaReal);
+
+
+        }
+        else if(escolhaMenu==5)
+        {
+            printf("O valor convertido é %f euros",valorDolarParaEuro);
+        }
+        else
+        {
+            printf("O valor convertido é %f reais",valorDolarparaReal);
+
+        }
+
+
+
+    return 0;
+}
