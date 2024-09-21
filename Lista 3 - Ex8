@@ -1,0 +1,40 @@
+/*
+Lista 3
+Exercício 8
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    int valorDoProduto;
+    float valorDaVenda;
+
+    //Pede para o usuário informar o valor do produto
+    printf("Qual o valor do produto? ");
+    scanf("%d",&valorDoProduto);
+
+    //Verifica o valor do lucro conforme o valor do produto
+    if (valorDoProduto<20)
+    {
+        valorDaVenda = valorDoProduto * 1.45;
+
+    }
+    else if (valorDoProduto > 20 && valorDoProduto < 50)
+    {
+
+        valorDaVenda = valorDoProduto * 1.35;
+    }
+    else
+    {
+        valorDaVenda = valorDoProduto * 1.25;
+        
+    }
+
+        printf("O valor de venda do produto deve ser de R$ %f",valorDaVenda);
+
+
+    return 0;
+}
