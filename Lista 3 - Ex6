@@ -1,0 +1,59 @@
+/*
+Lista 3
+Exercício 6
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+#include<time.h> //Para usar a função de tempo
+#include<stdlib.h> //Para utilizar a função de aleatorização
+
+int main()
+{
+    srand(time(0)); //Esse comando é necessário para pegar o horário do computador como semente para números aleatórios
+    char escolhaUsuario;
+    int numeroUsuario,numeroSorteado, numeroFinal;
+
+    //Pergunta se o usuário aposta em par ou impar
+    printf("Vamos jogar um jogo, me diga, você aposta em par ou impar (P/I)? ");
+    scanf("%c",&escolhaUsuario);
+
+    //Pede para o usuário dizer um número entre 0 e 5
+    printf("Por gentileza, informe um número entre 0 e 5: ");
+    scanf("%d",&numeroUsuario);
+    
+    if(numeroUsuario>5 || numeroUsuario<0)
+    {
+        printf("Você escolheu um número inválido, tente novamente");
+        
+    }
+    else
+    {
+
+    //Computador sorteia um número de 0 a 5
+        numeroSorteado = rand() % 6;
+
+    //Soma número do computador e do usuário
+        numeroFinal = numeroSorteado + numeroUsuario;
+
+    //Verifica-se é par ou impar
+        if ((escolhaUsuario == 'P') && numeroFinal % 2 == 0) 
+        {
+    // O usuário escolheu PAR e a soma é par
+    printf("O destino quis e você venceu, parabéns!!\n");
+        } 
+    else if ((escolhaUsuario == 'I') && numeroFinal % 2 != 0) {
+    // O usuário escolheu ÍMPAR e a soma é ímpar
+    printf("O destino quis e você venceu, parabéns!!\n");
+    }
+     else {
+    // O usuário perdeu
+    printf("Você perdeu, o computador (eu) venci!!!\n");
+    }
+    }
+
+
+    return 0;
+
+}
