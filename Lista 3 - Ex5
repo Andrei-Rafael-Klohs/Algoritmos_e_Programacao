@@ -1,0 +1,32 @@
+/*
+Lista 3
+Exercício 5
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    int numero;
+
+    //Usuário insere número
+    printf("Digite um número qualquer: ");
+    scanf("%d",&numero);
+
+    //Diz se o número é impar ou não
+    if(numero%2==0)
+    {
+        printf("Seu número é par");
+
+    }   
+    else
+    {
+        printf("Seú número é impar");
+
+    }
+
+
+    return 0;
+}
