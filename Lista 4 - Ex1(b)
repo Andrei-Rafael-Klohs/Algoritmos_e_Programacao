@@ -1,0 +1,22 @@
+/*
+Lista 4
+Exercício 1 - b)
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+//Gerar  e escrever os números pares do intervalo 20 a 50
+int main ()
+{
+    int cont = 20;
+
+    while(cont<51)
+    {
+        printf("%d\n",cont);
+        cont+= 2;
+        
+    }
+    return 0;
+}
