@@ -1,0 +1,21 @@
+/*
+Lista 4
+Exercício 1 - c
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+//Gerar e escrever os números inteiros do intervalo [25,70] em ordem decrescente.
+int main ()
+{
+    int cont = 70;
+
+    while(cont>24)
+    {
+        printf("%d\n",cont);
+        cont--;
+    }
+    return 0;
+}
