@@ -1,0 +1,55 @@
+/*
+Lista 3
+Exercício 15
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{   
+
+    int valorProduto,valorVenda,opcaoEscolhida;
+
+    //Leia o valor do produto
+    printf("Qual o valor do produto? ");
+    scanf("%d",&valorProduto);
+
+    //Leia a forma de pagamento
+    printf("Qual a forma de pagamento? Escolha uma opção: \n");
+    printf("1 - À vista no dinheiro\n");
+    printf("2 - À vista no cartão de crédito\n");
+    printf("3 - Em duas vezes\n");
+    printf("4 - Em três vezes\n");
+    scanf("%d",&opcaoEscolhida);
+
+    if(opcaoEscolhida == 1)
+    {
+        valorVenda = valorProduto*0.85;
+        printf("O valor a ser pago é de R$ %d",valorVenda);
+    }
+
+    else if (opcaoEscolhida ==2)
+     {
+        valorVenda = valorProduto*0.90;
+        printf("O valor a ser pago é de R$ %d",valorVenda);
+    }
+
+    else if (opcaoEscolhida == 3)
+     {
+        valorVenda = valorProduto*1;
+        printf("O valor a ser pago é de R$ %d",valorVenda);
+    }
+    else if (opcaoEscolhida ==4)
+     {
+        valorVenda = valorProduto*1.10;
+        printf("O valor a ser pago é de R$ %d",valorVenda);
+    }
+    else
+    {
+        printf("Digite um número entre 0 e 4, por gentileza");
+    }
+
+    return 0;
+}
