@@ -1,0 +1,22 @@
+/*
+Lista 4
+Exercício 1 - a)
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+//Gerar e escrever todos os números inteiros do intervalo [0,100]
+int main ()
+{
+    int cont=0;
+    while(cont<101)
+    {
+        printf("%d\n",cont);
+        cont++;
+
+    }
+    
+    return 0;
+}
