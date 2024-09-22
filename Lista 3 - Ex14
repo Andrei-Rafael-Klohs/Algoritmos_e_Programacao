@@ -1,0 +1,56 @@
+/*
+Lista 3
+Exercício 14
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{   
+    char respostaUsuario;
+    int idade, valorAPagar;
+    
+    printf("Você possui dependentes? (S/N)? ");
+    scanf("%c",&respostaUsuario);
+
+    if (respostaUsuario == 'N')
+    {
+        printf("O valor a ser pago pelo plano é de R$ 300,00");
+
+        return 0;
+    }
+    else if (respostaUsuario == 'S')
+    {
+    printf("Qual a idade do dependente? ");
+    scanf("%d",&idade);
+
+    if(idade<10)
+    {
+        valorAPagar = 300+100;
+        printf("O valor a ser pago pelo plano é de R$ %d",valorAPagar);
+
+    }
+
+    else if(idade>9 && idade<31)
+    {
+        valorAPagar = 300+220;
+        printf("O valor a ser pago pelo plano é de R$ %d",valorAPagar);
+    }
+    
+     else if(idade>30 && idade<61)
+    {
+        valorAPagar = 300+395;
+        printf("O valor a ser pago pelo plano é de R$ %d",valorAPagar);
+    }
+     else 
+    {
+        valorAPagar = 300+480;
+        printf("O valor a ser pago pelo plano é de R$ %d",valorAPagar);
+    }
+    }
+
+
+    return 0;
+}
