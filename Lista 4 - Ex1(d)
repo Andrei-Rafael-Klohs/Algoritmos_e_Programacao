@@ -1,0 +1,21 @@
+/*
+Lista 4
+Exercício 1 - d
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+//d. Gerar e escrever os números ímpares do intervalo [25,95] em ordem decrescente..
+int main ()
+{
+    int cont = 95;
+
+    while(cont>24)
+    {
+        printf("%d\n",cont);
+        cont-=2;
+    }
+    return 0;
+}
