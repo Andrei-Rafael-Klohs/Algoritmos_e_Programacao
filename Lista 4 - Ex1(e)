@@ -1,0 +1,35 @@
+/*
+Lista 4
+Exercício 1 - e
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+//Ler 15 números e escrever a soma e a média dos números lidos
+int main ()
+{
+    int cont = 0;
+    int soma = 0;
+    int numero;
+    float media;
+
+//Usa o while para fazer a soma dos números
+    while(cont<15)
+    {
+        printf("Digite um número qualquer: ");
+        scanf("%d",&numero);
+        soma += numero;; //Use um operador de soma e atribuição ao mesmo tempo, para puxar o valor da soma anterior
+        cont ++;
+    }
+
+//Calcula a média
+    media = soma/15.0;
+
+//Exibe resultados
+        printf("O resultado da soma é de %d\n",soma);
+        printf("O resultado da média é de %f\n",media);
+
+    return 0;
+}
