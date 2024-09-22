@@ -1,0 +1,75 @@
+/*
+Lista 3
+Exercício 13
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    int grauA, grauB, grauC;
+    float media, mediaRecalculada;
+    char respostaUsuario;
+
+    //Descobre a nota do Grau A
+    printf("Qual foi sua nota no Grau A? ");
+    scanf("%d",&grauA);
+
+    //Descobre a nota do Grau B
+    printf("Qual foi sua nota no Grau B? ");
+    scanf("%d",&grauB);
+
+    //Calcula média
+    media = (grauA + grauB*2)/3;
+
+    //Verifica se passou ou não
+    if (media>6)
+    {
+        printf("Parabéns, sua nota foi maior que a média, você está aprovado");
+
+        return 0;
+    }
+    else
+    {
+        printf("Você está em recuperação\n");
+    }
+
+        printf("Você quer substituir a nota do Grau A ou do Grau B? (A/B)\n");
+        scanf(" %c", &respostaUsuario);
+        
+        //Fecha o programa caso o usuário digite outra resposta não válida
+        if (respostaUsuario != 'A' && respostaUsuario != 'B') 
+        {
+        printf("Digite um grau válido.\n");
+        return 0; 
+        }
+        
+
+        printf("Qual foi sua nota no Grau C? ");
+        scanf("%d",&grauC);
+
+    if(respostaUsuario == 'A')
+    {
+        mediaRecalculada = (grauC+grauB*2)/3.0;
+    }
+
+    if (respostaUsuario == 'B')
+    {
+        mediaRecalculada = (grauA+grauC*2)/3.0;
+        
+    }
+    if(mediaRecalculada>6)
+    {
+        printf("Parabéns, sua nota recalculada foi maior que a média, você está aprovado");
+
+    }
+    else if(mediaRecalculada<6)
+    {
+        printf("Que pena, você está reprovado");
+    }
+    
+    
+    return 0;
+}
