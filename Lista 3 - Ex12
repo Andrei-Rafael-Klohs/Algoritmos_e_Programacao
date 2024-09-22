@@ -1,0 +1,49 @@
+/*
+Lista 3
+Exercício 12
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main()
+{
+    int idade;
+
+    //Peça a idade
+    printf("Digite a idade do nadador, por gentileza: ");
+    scanf("%d",&idade);
+
+    //Processamento
+    if (idade>4 && idade<8)
+    {
+        printf("O nadador faz parte da categoria Infantil A");
+    }
+
+    else if (idade>7 && idade<11)
+    {
+        printf("O nadador faz parte da categoria Infantil B");
+    }
+
+    else if (idade>10 && idade<14)
+    {
+        printf("O nadador faz parte da categoria Juvenil A");
+    }
+
+    else if (idade>13 && idade<18)
+    {
+        printf("O nadador faz parte da categoria Juvenil B");
+    }
+    else if (idade>17)
+    {
+        printf("O nadador faz parte da categoria Sênior");
+    }
+    else
+    {
+        printf("A idade escolhida é inválida");
+
+    }
+
+    return 0;
+}
