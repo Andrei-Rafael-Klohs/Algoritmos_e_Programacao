@@ -1,0 +1,39 @@
+/*
+Lista 4
+Exercício 1 - f
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+//Ler 10 números inteiros e escrever a quantidade de números pares e a quantidade de números ímpares lidos.
+int main ()
+{
+ int pares = 0;
+ int impares = 0;
+ int cont = 0;
+ int numero;
+
+ while(cont<10)
+ {
+    printf("Digite um número qualquer: "); //Digita os números e leia com o scanf
+    scanf("%d",&numero);
+
+    if (numero %2==0) //Verifica se o número é par ou não
+    {
+        pares++;
+    }
+    else
+    {
+        impares++;
+    }
+        cont++;
+ }
+ 
+//Lê os resultados
+    printf("A quantidade de números pares é de %d\n",pares);
+    printf("A quantidade de númeors impares é de %d\n",impares);
+
+ return 0;
+}
