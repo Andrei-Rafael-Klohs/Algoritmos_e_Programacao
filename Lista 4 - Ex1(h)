@@ -1,0 +1,36 @@
+/*
+Lista 4
+Exercício 1 - g
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+    int main ()
+    {
+
+        int numerosASeremLidos;
+        int cont = 0;
+        int somatório;
+        int numeroLido;
+
+        printf("Quantos números você quer que eu leia? ");
+        scanf("%d",&numerosASeremLidos);
+
+        while(cont<numerosASeremLidos)
+        {
+            printf("Diga mais um número: ");
+            scanf("%d",&numeroLido);
+            
+            somatório+=numeroLido;
+            cont ++;
+        }
+
+        printf("O somatório dos teus números é %d",somatório);
+
+        return 0;
+
+    }
