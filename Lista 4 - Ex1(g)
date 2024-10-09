@@ -1,0 +1,59 @@
+/*
+Lista 4
+Exercício 1 - g
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+    int main ()
+    {
+        int numeroSorteado;
+        int cont = 0;
+        int numeroNegativo = 0;
+        int numeroPositivo = 0;
+        int numeroNulo = 0;
+        
+        srand(time(0));
+
+    //Etapa I - Sortear os vinte números entre -10 e 10
+    while (cont<20)
+    {
+        numeroSorteado = -10 + rand() % 21;
+
+        printf("O número sorteado foi %d\n",numeroSorteado); //Vai printar o número sorteado
+
+    //Etapa II - Dizer se o número sorteado é positivo, negativo ou nulo
+        if (numeroSorteado<0)
+        {
+            printf("Seu número é negativo\n\n");
+
+            numeroNegativo++;
+        }
+
+        else if (numeroSorteado==0)
+        {
+            printf("Seu número é nulo\n\n");
+
+            numeroNulo++;
+        }
+
+        else 
+        {
+            printf("Seu número é positivo\n\n");
+
+            numeroPositivo++;
+        }
+
+        cont ++;
+    }
+
+    //Etapa III - Imprimir a quanitidade de números positivos e negativos
+
+    printf("Você sorteou %d números positivos, %d negativos e %d nulos",numeroPositivo,numeroPositivo,numeroNulo);
+        
+        return 0;
+    }
