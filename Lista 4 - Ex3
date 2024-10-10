@@ -1,0 +1,47 @@
+/*
+Lista 4
+Exercício 3
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+int main()
+{
+    int numero, numerox1,numerox2,numerox3,numerox4,numerox5,numerox6,numerox7,numerox8,numerox9,numerox10;
+
+
+    //Leia o número do usuário
+    printf("Digite um número por gentileza: ");
+    scanf("%d",&numero);
+
+    //Faz os cálculos todos
+    numerox1 = numero*1;
+    numerox2 = numero*2;
+    numerox3 = numero*3;
+    numerox4 = numero*4;
+    numerox5 = numero*5;
+    numerox6 = numero*6;
+    numerox7 = numero*7;
+    numerox8 = numero*8;
+    numerox9 = numero*9;
+    numerox10 = numero*10;
+
+    //Mostre na tela
+    printf("%d x 1 = %d\n",numero, numerox1);
+    printf("%d x 2 = %d\n",numero, numerox2);
+    printf("%d x 3 = %d\n",numero, numerox3);
+    printf("%d x 4 = %d\n",numero, numerox4);
+    printf("%d x 5 = %d\n",numero, numerox5);
+    printf("%d x 6 = %d\n",numero, numerox6);
+    printf("%d x 7 = %d\n",numero, numerox7);
+    printf("%d x 8 = %d\n",numero, numerox8);
+    printf("%d x 9 = %d\n",numero, numerox9);
+    printf("%d x 10 = %d\n", numero, numerox10);
+
+
+    return 0;
+}
