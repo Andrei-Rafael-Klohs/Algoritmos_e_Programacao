@@ -1,0 +1,53 @@
+/*
+Lista 4
+Exercício 2
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+
+int main ()
+{
+    srand(time(0));
+
+    int numeroSorteado;
+    int tentativasUsuario = 0;
+    int chute;
+
+    printf("Vamos jogar um jogo, tente acertar o número que irei sortear entre 1 e 10\n\n");
+
+    //Sorteie um número entre 1 e 10
+    numeroSorteado= 1 + rand() % 11;
+
+    while(tentativasUsuario<3)
+    {
+        printf("Tente adivinhar o número sorteado: ");
+        scanf("%d",&chute);
+
+        if(chute>numeroSorteado) //Se o chute foi MAIOR que o número sorteado
+        {
+            printf("Seu chute está acima do número sorteado\n\n");
+        }
+
+        else if (chute<numeroSorteado) //Se o chute foi MENOR que o número sorteado
+        {
+            printf("Seu chute está abaixo do número sorteado\n\n");
+        }
+
+        else //Se o chute foi o número sorteado
+        {
+            printf("Parabéns, você acertou o número sorteado\n\n");
+            return 0;
+        }
+
+        tentativasUsuario++;
+    } 
+        printf("Que pena, você não acertou, o número sorteado era %d\n",numeroSorteado);
+
+    return 0;
+
+
+}
