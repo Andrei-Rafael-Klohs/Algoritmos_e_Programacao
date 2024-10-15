@@ -1,0 +1,54 @@
+/*
+Lista 4
+Exercício 6
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+
+int main()
+{
+    srand(time(0));
+    
+    int numeroSorteado;
+    float media;
+    int cont = 1;
+    int soma = 0;
+    int maior = 0;
+    int menor = 100;
+    
+    while (cont<=5)
+    {
+        //Sorteio dos números
+        numeroSorteado = rand () % 101;
+        printf("O número sorteado foi %d\n",numeroSorteado);
+        
+        soma+=numeroSorteado;
+        
+        // Vê se é o maior ou menor
+        if (numeroSorteado > maior) 
+        {
+            maior = numeroSorteado;
+        }
+        
+        if (numeroSorteado < menor) 
+        {
+            menor = numeroSorteado;
+        }
+        
+        cont ++;
+    }
+    
+        media=soma/5.0;
+    
+        //Apresenta os resultados
+        printf("A média dos números sorteados é: %f\n", media);
+        printf("O maior número sorteado foi: %d\n", maior);
+        printf("O menor número sorteado foi: %d\n", menor);
+    
+    
+    return 0;
+}
