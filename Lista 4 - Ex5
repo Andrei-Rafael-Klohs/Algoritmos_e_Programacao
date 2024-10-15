@@ -1,0 +1,93 @@
+/*
+Lista 4
+Exercício 5
+Aluno: Andrei Rafael Padilha Klohs
+Disciplina: Algoritmos e Programação: Fundamentos
+*/
+
+#include<stdio.h>
+
+int main ()
+{
+    int alunos,grauA,grauB,grauC;
+    float media;
+    int cont = 1;
+    char resposta;
+    
+    printf("Para quantos alunos você quer calcular a média? ");
+    scanf("%d",&alunos);
+    
+    while (cont<=alunos)
+    {
+        printf ("ALUNO %d\n",cont);
+        printf("Qual foi a nota do Grau A do aluno? ");
+        scanf("%d",&grauA);
+        
+        printf("Qual foi a nota do Grau B do aluno? ");
+        scanf("%d",&grauB);
+        
+        media=(grauA+(grauB*2))/3.0;
+        
+        if(media<6)
+        {
+            printf("O aluno não atingiu a média desejada\n");
+            printf("Qual foi a nota do Grau C? \n");
+            scanf("%d",&grauC);
+            
+            printf("E qual o Grau que o aluno deseja substituir (A/B)? ");
+            scanf(" %c",&resposta);
+            
+            if(resposta=='A')
+            {
+               media=(grauC+(grauB*2))/3; 
+               
+               if(media<6)
+               {
+                   printf("REPROVADO\n");
+                   printf("A média foi de %f\n",media);
+                   
+               }
+                
+                else
+                {
+                    printf("APROVADO\n");
+                    printf("A média foi de %f\n",media);
+                }
+            }
+            
+            if (resposta=='B')
+            {
+              media=(grauA+(grauC*2))/3; 
+              
+               if(media<6)
+               {
+                   printf("REPROVADO\n");
+                   printf("A média foi de %f\n",media);
+               }
+                
+                else
+                {
+                    printf("APROVADO\n");
+                    printf("A média foi de %f\n",media);
+                }
+            }
+            
+            else
+            {
+                printf("Opção inválida\n");
+                return 0;
+            }
+        }
+        
+        else
+        {
+            printf("APROVADO\n");
+            printf("A média foi de %f\n",media);
+        }
+        
+        cont ++;
+    }
+    
+    
+    return 0;
+}
